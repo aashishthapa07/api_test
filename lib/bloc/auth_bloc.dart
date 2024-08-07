@@ -1,5 +1,5 @@
-import 'package:api_test/bloc/bloc_events.dart';
-import 'package:api_test/bloc/bloc_states.dart';
+import 'package:api_test/bloc/auth_events.dart';
+import 'package:api_test/bloc/auth_states.dart';
 import 'package:api_test/repository/auth_repository.dart';
 import 'package:bloc/bloc.dart';
 

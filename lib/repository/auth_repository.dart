@@ -1,11 +1,12 @@
 import 'dart:convert';
+import 'package:api_test/auth/services/api_url.dart';
 import 'package:api_test/model/user/user_model.dart';
 import 'package:http/http.dart' as http;
 
 class AuthRepository {
   Future<String> login(UserModel user) async {
     final response = await http.post(
-      Uri.parse('https://qa-ravenapi.ekbana.net/api/v1/auth/login'),
+      Uri.parse('$ApiService/api/v1/auth/login'),
       headers: {
         'Content-Type': 'application/json',
       },
@@ -22,7 +23,7 @@ class AuthRepository {
 
   Future<String> signup(UserModel user) async {
     final response = await http.post(
-      Uri.parse('https://qa-ravenapi.ekbana.net/api/v1/auth/signup'),
+      Uri.parse('$ApiService/api/v1/auth/signup'),
       headers: {
         'Content-Type': 'application/json',
       },

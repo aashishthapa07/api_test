@@ -1,6 +1,6 @@
-import 'package:api_test/bloc/bloc_bloc.dart';
-import 'package:api_test/bloc/bloc_events.dart';
-import 'package:api_test/bloc/bloc_states.dart';
+import 'package:api_test/bloc/auth_bloc.dart';
+import 'package:api_test/bloc/auth_events.dart';
+import 'package:api_test/bloc/auth_states.dart';
 import 'package:api_test/model/user/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
